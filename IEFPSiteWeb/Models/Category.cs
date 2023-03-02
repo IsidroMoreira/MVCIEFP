@@ -8,10 +8,10 @@ namespace IEFPSiteWeb.Models
         public int Id { get; set; }
 
 
-        [Required]
+        [Required(ErrorMessage = "O Campo é de Preenchimento Obrigatório")] /*Mudar mensagem de Validação*/
         public string Name { get; set; } = null!;
 
-
+        [Display(Name = "Display Order")] /*Mudar mensagem de Validação*/
         public int DisplayOrder { get; set; }
 
 
